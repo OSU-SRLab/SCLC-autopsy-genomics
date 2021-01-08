@@ -1,9 +1,8 @@
 # SCLC-autopsy-genomics
-Scripts associated with our study, "Genomic and transcriptomic characterization of relapsed small cell lung cancer through rapid research autopsy"
+Scripts associated with our study, "Genomic and transcriptomic characterization of relapsed small cell lung cancer through rapid research autopsy."
 
 ### Dependencies
 
-|--------------|----------------------------|
 | **Software** | **URL** | **Version Used** |
 |--------------|---------|------------------|
 | FASTQC       | http://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc | 0.11.9 |
@@ -15,7 +14,6 @@ Scripts associated with our study, "Genomic and transcriptomic characterization 
 | SAMtools     | http://www.htslib.org/ | 1.9 |
 | bedtools     | https://bedtools.readthedocs.io/en/latest/ | 2.29.2 |
 | Snakemake | https://snakemake.readthedocs.io/ | 5.31.1 |
-|--------------|---------|------------------|
 
 All executables for the above (`fastqc`, `hisat2`, `trim_galore`, `cutadapt`, `stringtie`, `gffcompare`, `samtools`, `bedtools`) must be available in `$PATH`, and the Python libraries associated with Cutadapt and Snakemake in `$PYTHONPATH`.
 
@@ -26,7 +24,7 @@ This workflow requires paired-end fastqs per sample, named as follows:
 ```StudyID-PatientNum-NT-SampleID-HybID_Instrument_LaneID_R12.fastq```
 
 where:
-|-------|-------------|
+
 | **Field** | **Description** |
 |-------|-------------|
 | StudyID | String identifying a sequencing study |
@@ -37,7 +35,6 @@ where:
 | Instrument | Name of sequencing instrument |
 | LaneID | Lane number that sample was run on |
 | R12 | Either "R1" for read 1 or "R2" for read 2 from paired-end sequencing |
-|-------|-------------|
 
 ### Running
 
